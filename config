@@ -28,7 +28,6 @@ for_window [class="^.*"] border pixel 2, title_format "<b> %class >> %title </b>
 # gaps
 gaps inner 8
 gaps outer 5
-smart_gaps on
 
 # font
 font pango:DejaVu Sans Mono 10
@@ -240,8 +239,8 @@ bindsym $Mod+y border 1pixel
 bindsym $Mod+u border none
 
 # change gaps
-bindsym $Mod+plus        gaps inner current plus  5
-bindsym $Mod+minus       gaps inner current minus 5
+#bindsym $Mod+plus        gaps inner current plus  5
+#bindsym $Mod+minus       gaps inner current minus 5
 bindsym $Mod+Shift+plus  gaps outer current plus  5
 bindsym $Mod+Shift+minus gaps outer current minus 5
 bindsym $Mod+Control+plus        gaps inner all plus  5
@@ -314,7 +313,7 @@ bar {
 	position top
     	status_command /usr/bin/i3status-rs ~/.config/i3/bar.toml
 }
-
+ 
 bar {
 	output HDMI1
 	position top
