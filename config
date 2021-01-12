@@ -104,8 +104,8 @@ bindsym $Mod+x exec --no-startup-id rofr.sh -l
 
 # Screenshot
 bindsym Print exec --no-startup-id "scrot '%S.png' \
-            -e 'mv $f $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png \
-            ; gpicview $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png'"
+            -e 'mv $f $$(xdg-user-dir PICTURES)/screen-linux/ArchLabs-%S-$wx$h.png \
+            ; gpicview $$(xdg-user-dir PICTURES)/screen-linux/ArchLabs-%S-$wx$h.png'"
 
 # audio
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -275,7 +275,7 @@ bindsym $Mod+f fullscreen toggle
 # exec killall compton
 #exec_always --no-startup-id compton -cb --config ~/.config/compton.conf
 #exec_always --no-startup-id picom
-# exec feh --bg-scale $HOME/Téléchargements/Buddha_wallpaper.jpg
+exec --no-startup-id feh -bg-fill ~/Téléchargements/wallpapermain.jpg --bg-fill ~/Téléchargements/wallpapermain.jpg
 #bar {
 #    font pango:DejaVu Sans Mono, FontAwesome 12
 #    position top
